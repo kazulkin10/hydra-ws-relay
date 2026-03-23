@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: hydra-relay-2
+    runtime: docker
+    plan: free
+    envVars:
+      - key: MAIN_HOST
+        value: 208.123.185.235
+      - key: VLESS_PORT
+        value: "2010"
+      - key: NODE_NAME
+        value: render-2
+      - key: PORT
+        value: "8080"
